@@ -11,6 +11,12 @@ fn factorial(num: u64) -> u64 {
     //   - 额外的变量
     // 额外挑战，不使用:
     //   - 递归
+    let mut result = 1;
+
+    for x in 2..=num {
+        result *= x;
+    }
+    result
 }
 
 fn main() {
