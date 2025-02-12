@@ -29,5 +29,5 @@ fn main() {
     }
 
     // TODO: 打印`JobStatus.jobs_done` 的值。
-    println!("Jobs done: {}", todo!());
+    println!("Jobs done: {}", status.lock().unwrap().jobs_done);
 }
